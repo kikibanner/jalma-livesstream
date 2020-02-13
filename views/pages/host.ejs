@@ -18,14 +18,15 @@
     </div>
     <div class="broadcast-controls-container">
         <div class="rtmp-container">
-            <div id="rtmpInputContainer" class="input-container" >
-                <input id="rtmpServer" type="url" placeholder="rtmp://myrtmpserver/mybroadcastapp">
-                <input id="rtmpStream" type="text" placeholder="myStreamName">
-            </div>
+            <span id="rtmpLabel"></span>
+            <span class="hidden error" id="rtmpError"></span>
+            <span id="rtmpActive" class="hidden active"></span>
+
         </div>
         <button id="startStop" class="btn-broadcast hidden">Start Broadcast</button>
         <div id="urlContainer" class="url-container hidden">
             <div id="broadcastURL" class="opacity-0 no-show"></div>
+
         </div>
     </div>
 
